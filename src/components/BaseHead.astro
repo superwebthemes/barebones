@@ -1,0 +1,36 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+import { SITE } from "@siteConfig";
+
+import Favicons from "@components/Favicons.astro";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=yes"
+  />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="application-name" content={SITE.title} />
+  <meta property="og:site_name" content={SITE.title} />
+
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title={SITE.title}
+    href={new URL("rss.xml", Astro.site)}
+  />
+
+  <ViewTransitions />
+  <Favicons />
+
+  <slot />
+</head>

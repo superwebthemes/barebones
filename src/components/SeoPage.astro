@@ -1,0 +1,30 @@
+---
+import { SITE, SOCIAL_LINKS } from "@siteConfig.ts";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE.title, description = SITE.description } = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<link rel="canonical" href={SITE.url} />
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content={Astro.request.url} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content="/og.jpg" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content={SITE.url} />
+<meta property="twitter:url" content={Astro.request.url} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="/og.jpg" />

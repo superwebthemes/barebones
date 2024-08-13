@@ -1,0 +1,64 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { SITE } from "@siteConfig";
+
+const { entry } = Astro.props;
+const post = entry as CollectionEntry<"blog">;
+
+let postTitle = post.data.title;
+if (!postTitle) {
+  postTitle = SITE.title;
+}
+
+let postDescription = post.data.description;
+if (!postDescription) {
+  postDescription = SITE.description;
+}
+---
+
+<title>
+  {postTitle ? `${postTitle} | ${SITE.title}` : SITE.title}
+</title>
+<meta
+  name="title"
+  content={postTitle ? `${postTitle} | ${SITE.title}` : SITE.title}
+/>
+<meta
+  name="description"
+  content={postDescription ? postDescription : SITE.description}
+/>
+<link rel="canonical" href={SITE.url} />
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content={Astro.request.url} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={postTitle ? postTitle : SITE.title} />
+<meta
+  property="og:description"
+  content={postDescription ? postDescription : SITE.description}
+/>
+<meta
+  property="og:image"
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
+/>
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content={SITE.url} />
+<meta property="twitter:url" content={Astro.request.url} />
+<meta name="twitter:title" content={postTitle ? postTitle : SITE.title} />
+<meta
+  name="twitter:description"
+  content={postDescription ? postDescription : SITE.description}
+/>
+<meta
+  name="twitter:image"
+  content={post?.data.image ? post.data.image.src : "/og.jpg"}
+/>
+
+{
+  post?.data.tags &&
+    post.data.tags.map((tag: string) => {
+      return <meta property="article:tag" content={tag} />;
+    })
+}

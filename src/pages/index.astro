@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import Introduction from "@components/Introduction.astro";
+import Post from "@components/Post.astro";
+import SeoPage from "@components/SeoPage.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
+);
+---
+
+<BaseLayout>
+  <SeoPage slot="head" />
+  <main>
+    <Introduction />
+    <hr class="my-8 border-[0.5px] opacity-50" />
+    <ul class="list-none p-0">
+      {posts.map((post) => <Post post={post} />)}
+    </ul>
+  </main>
+</BaseLayout>

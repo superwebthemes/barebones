@@ -1,0 +1,22 @@
+---
+import { NAV_LINKS, SITE, SOCIAL_LINKS } from "@siteConfig.ts";
+---
+
+<header class="flex flex-wrap items-center justify-between pb-8">
+  <a href="/" class="text-lg font-semibold sm:text-xl">{SITE.title}</a>
+  <nav>
+    <ul class="flex list-none items-center gap-2 p-0 sm:gap-3">
+      {
+        Object.keys(NAV_LINKS).map((navItemKey) => {
+          return (
+            <li>
+              <a href={NAV_LINKS[navItemKey].path}>
+                {NAV_LINKS[navItemKey].label}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </nav>
+</header>

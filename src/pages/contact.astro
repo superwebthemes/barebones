@@ -1,0 +1,24 @@
+---
+import { SOCIAL_LINKS } from "@siteConfig";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import SeoPage from "@components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="Contact" />
+  <ul class="list-none p-0">
+    {
+      Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
+        return (
+          <li>
+            <a href={SOCIAL_LINKS[socialLinkKey].url}>
+              {SOCIAL_LINKS[socialLinkKey].label}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</BaseLayout>
