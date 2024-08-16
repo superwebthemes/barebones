@@ -3,6 +3,7 @@ export type SiteConfiguration = {
   description: string;
   url: string;
   author: string;
+  locale: string;
 };
 
 export type NavigationLinks = {

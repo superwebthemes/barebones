@@ -10,6 +10,7 @@ export const SITE: SiteConfiguration = {
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdwon.",
   url: "https://astro-barebones-theme.netlify.app",
   author: "SuperWeb Themes",
+  locale: "en-US",
 };
 
 export const NAV_LINKS: NavigationLinks = {
