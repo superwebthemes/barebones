@@ -8,7 +8,7 @@ export const SITE: SiteConfiguration = {
   title: "Barebones",
   description:
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdwon.",
-  url: "https://astro-barebones-theme.netlify.app",
+  url: "https://barebones.superwebthemes.com",
   author: "SuperWeb Themes",
   locale: "en-US",
 };
@@ -27,7 +27,7 @@ export const NAV_LINKS: NavigationLinks = {
     label: "Contact",
   },
   documentation: {
-    path: "https://barebones.superwebthemes.com",
+    path: "https://docs.superwebthemes.com",
     label: "Documentation",
   },
 };
@@ -44,5 +44,9 @@ export const SOCIAL_LINKS: SocialLinks = {
   twitter: {
     label: "Twitter",
     url: "https://twitter.com/superwebthemes",
+  },
+  reddit: {
+    label: "Reddit",
+    url: "https://www.reddit.com/r/superwebthemes",
   },
 };

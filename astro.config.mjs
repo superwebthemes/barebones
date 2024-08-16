@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   // change this to your own domain
-  site: "https://astro-barebones-theme.netlify.app",
+  site: "https://barebones.superwebthemes.com",
   integrations: [tailwind(), sitemap()],
 });
