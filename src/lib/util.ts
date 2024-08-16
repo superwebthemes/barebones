@@ -1,3 +1,5 @@
+import { SITE } from "@/siteConfig.ts";
+
 export function formatDate(
   date: Date,
   options: {
@@ -5,7 +7,7 @@ export function formatDate(
     month?: "numeric" | "2-digit" | "long" | "short" | "narrow";
     day?: "numeric" | "2-digit";
   } = {},
-  locale: string = "en-US",
+  locale: string = SITE.locale,
 ): string {
   const defaultOptions: Intl.DateTimeFormatOptions = {
     year: "numeric",
