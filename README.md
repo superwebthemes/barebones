@@ -1,8 +1,23 @@
 # Introducing Barebones 🦴
 
-Barebones is a minimalist, unstyled blog template for Astro. Clone it and start writing Markdown content with type-safe frontmatter instantly.
+![barebones-cover](https://github.com/user-attachments/assets/bde6d3af-472f-4320-96ec-b70040098ea9)
 
-## 🧞 Commands
+Welcome to Barebones, an open source template for [Astro](https://astro.build/) designed for simplicity and flexibility. Whether you're a seasoned developer or just starting out, Barebones provides everything you need to kickstart your next blog with minimal setup.
+
+Head over to the [repository](https://github.com/superwebthemes/barebones) and check out our [documentation](https://barebones.superwebthemes.com) to get started.
+
+## Key features
+
+- **Batteries included:** Get started immediately with a ready-to-use setup. Start writing right away, no extensive configuration required.
+- **Fast by default:** Leverage the power of Astro, Tailwind CSS, and Markdown to create fast, lightweight web pages.
+- **Extensible and customizable:** Perfect foundation to build upon and meet your unique needs.
+- **SEO-friendly:** Sitemap, RSS feeds, and Open Graph protocol support out of the box.
+- **Best practices:** Follows industry best practices for development, ensuring high-quality, maintainable code.
+- **Accessible:** Dark and light mode support, keyboard navigation, and semantic HTML. Fully compliant with WCAG standards.
+- **Free and open source:**
+  Join the community and contribute to make this project even better!
+
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -15,6 +30,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Further reading
 
-Read the [documentation for Barebones](https://barebones.superwebthemes.com) or browse our [subreddit, r/SuperWeb](https://www.reddit.com/r/SuperWeb/).
+Read the [documentation for Barebones](https://barebones.superwebthemes.com), browse our [subreddit, r/superwebthemes](https://www.reddit.com/r/superwebthemes/), or check out the source code on [GitHub](https://github.com/superwebthemes/barebones).
+
+## Styled examples
+
+If you're interested in predesigned [websites built with Barebones](https://superwebthemes.com), check out **SuperWeb Themes** — a variety of expertly designed Barebones examples by us.
