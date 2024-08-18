@@ -14,8 +14,7 @@ Head over to the [repository](https://github.com/superwebthemes/barebones) and c
 - **SEO-friendly:** Sitemap, RSS feeds, and Open Graph protocol support out of the box.
 - **Best practices:** Follows industry best practices for development, ensuring high-quality, maintainable code.
 - **Accessible:** Dark and light mode support, keyboard navigation, and semantic HTML. Fully compliant with WCAG standards.
-- **Free and open source:**
-  Join the community and contribute to make this project even better!
+- **Free and open source:** Join the community and contribute to make this project even better!
 
 ## Commands
 
@@ -32,7 +31,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Further reading
 
-Read the [documentation for Barebones](https://barebones.superwebthemes.com), browse our [subreddit, r/superwebthemes](https://www.reddit.com/r/superwebthemes/), or check out the source code on [GitHub](https://github.com/superwebthemes/barebones).
+Read the [documentation for Barebones](https://docs.superwebthemes.com), join our [Discord server](https://discord.gg/V5MCBCsAjJ), or find us on X (Twitter) at [@superwebthemes](https://x.com/superwebthemes).
 
 ## Styled examples
 
