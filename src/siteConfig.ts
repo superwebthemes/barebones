@@ -35,7 +35,7 @@ export const NAV_LINKS: NavigationLinks = {
 export const SOCIAL_LINKS: SocialLinks = {
   email: {
     label: "Email",
-    url: "mailto:info@superwebthemes.com",
+    url: "mailto:support@superwebthemes.com",
   },
   github: {
     label: "GitHub",
