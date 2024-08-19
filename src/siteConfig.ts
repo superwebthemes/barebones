@@ -41,6 +41,10 @@ export const SOCIAL_LINKS: SocialLinks = {
     label: "GitHub",
     url: "https://github.com/superwebthemes",
   },
+  discord: {
+    label: "Discord",
+    url: "https://discord.gg/V5MCBCsAjJ",
+  },
   twitter: {
     label: "Twitter",
     url: "https://twitter.com/superwebthemes",
