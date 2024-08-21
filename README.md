@@ -2,6 +2,8 @@
 
 ![barebones-cover](https://github.com/user-attachments/assets/bde6d3af-472f-4320-96ec-b70040098ea9)
 
+[View demo](https://barebones.superwebthemes.com/)
+
 Welcome to Barebones, an open source template for [Astro](https://astro.build/) designed for simplicity and flexibility. Whether you're a seasoned developer or just starting out, Barebones provides everything you need to kickstart your next blog with minimal setup.
 
 Head over to the [repository](https://github.com/superwebthemes/barebones) and check out our [documentation](https://barebones.superwebthemes.com) to get started.
