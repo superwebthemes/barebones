@@ -20,13 +20,13 @@ Head over to the [repository](https://github.com/superwebthemes/barebones) and c
 
 ## Core Web Vitals
 
-**Performance:** 100
+Performance: **100**
 
-**Accessibility:** 100
+Accessibility: **100**
 
-**Best Practices:** 100
+Best Practices: **100**
 
-**SEO:** 100
+SEO: **100**
 
 ## Commands
 
