@@ -18,6 +18,16 @@ Head over to the [repository](https://github.com/superwebthemes/barebones) and c
 - **Accessible:** Dark and light mode support, keyboard navigation, and semantic HTML. Fully compliant with WCAG standards.
 - **Free and open source:** Join the community and contribute to make this project even better!
 
+## Core Web Vitals
+
+**Performance:** 100
+
+**Accessibility:** 100
+
+**Best Practices:** 100
+
+**SEO:** 100
+
 ## Commands
 
 All commands are run from the root of the project, from a terminal:
