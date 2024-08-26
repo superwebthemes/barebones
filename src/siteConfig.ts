@@ -7,7 +7,7 @@ import type {
 export const SITE: SiteConfiguration = {
   title: "Barebones",
   description:
-    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdwon.",
+    "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
   url: "https://barebones.superwebthemes.com",
   author: "SuperWeb Themes",
   locale: "en-US",
