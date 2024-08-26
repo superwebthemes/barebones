@@ -13,11 +13,11 @@
     --dark-mode-foreground: 255 255 255;
     --dark-mode-foreground-muted: 205 205 205;
   }
-}
 
-body {
-  background-color: light-dark(
-    rgb(var(--light-mode-background)),
-    rgb(var(--dark-mode-background))
-  );
+  body {
+    background-color: light-dark(
+      rgb(var(--light-mode-background)),
+      rgb(var(--dark-mode-background))
+    );
+  }
 }
