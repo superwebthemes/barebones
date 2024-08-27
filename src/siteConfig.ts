@@ -49,8 +49,4 @@ export const SOCIAL_LINKS: SocialLinks = {
     label: "Twitter",
     url: "https://twitter.com/superwebthemes",
   },
-  reddit: {
-    label: "Reddit",
-    url: "https://www.reddit.com/r/superwebthemes",
-  },
 };
