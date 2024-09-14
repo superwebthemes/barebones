@@ -5,11 +5,14 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import Introduction from "@components/Introduction.astro";
 import Post from "@components/Post.astro";
+import Project from "@components/Project.astro";
 import SeoPage from "@components/SeoPage.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
 );
+
+const projects = await getCollection("projects");
 ---
 
 <BaseLayout>
@@ -17,8 +20,13 @@ const posts = (await getCollection("blog")).sort(
   <main>
     <Introduction />
     <hr class="my-8 border-[0.5px] opacity-50" />
-    <ul class="list-none p-0">
+    <h2 class="mb-3 text-lg font-bold">Blog posts</h2>
+    <ul class="grid list-none gap-2 p-0">
       {posts.map((post) => <Post post={post} />)}
+    </ul>
+    <h2 class="mb-3 mt-8 text-lg font-bold">Projects</h2>
+    <ul class="grid list-none gap-2 p-0">
+      {projects.map((project) => <Project project={project} />)}
     </ul>
   </main>
 </BaseLayout>

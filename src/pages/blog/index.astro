@@ -7,12 +7,13 @@ import Post from "@components/Post.astro";
 import SeoPage from "@components/SeoPage.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf()
+  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
 );
 ---
 
 <BaseLayout>
   <SeoPage slot="head" title="Blog" />
+  <h2 class="mb-3 text-lg font-bold">Blog posts</h2>
   <ul class="list-none p-0">
     {posts.map((post) => <Post post={post} />)}
   </ul>
