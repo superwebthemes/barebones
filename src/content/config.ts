@@ -1,17 +1,14 @@
+import { glob } from "astro/loaders";
 import { defineCollection, z } from "astro:content";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/blog" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
       description: z.string(),
       publicationDate: z.coerce.date(),
-      image: image()
-        .refine((img) => img.width >= 1200, {
-          message: "Image should be 1200px × 630px.",
-        })
-        .optional(),
+      image: image().optional(),
       imageAlt: z.string().optional(),
       tags: z.array(z.string()).optional(),
     }),
