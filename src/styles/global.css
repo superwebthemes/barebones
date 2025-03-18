@@ -1,23 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@layer base {
-  :root {
-    color-scheme: light dark;
+:root {
+  color-scheme: light dark;
 
-    --light-mode-background: 240 240 240;
-    --light-mode-foreground: 0 0 0;
-    --light-mode-foreground-muted: 50 50 50;
-    --dark-mode-background: 10 10 10;
-    --dark-mode-foreground: 255 255 255;
-    --dark-mode-foreground-muted: 205 205 205;
-  }
+  --light-mode-background: 240 240 240;
+  --light-mode-foreground: 0 0 0;
+  --light-mode-foreground-muted: 50 50 50;
+  --dark-mode-background: 10 10 10;
+  --dark-mode-foreground: 255 255 255;
+  --dark-mode-foreground-muted: 205 205 205;
+}
 
-  body {
-    background-color: light-dark(
-      rgb(var(--light-mode-background)),
-      rgb(var(--dark-mode-background))
-    );
-  }
+body {
+  background-color: light-dark(
+    rgb(var(--light-mode-background)),
+    rgb(var(--dark-mode-background))
+  );
 }
