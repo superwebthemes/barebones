@@ -2,7 +2,7 @@
 title: The Metamorphosis (1915)
 description: A salesman wakes up and finds himself transformed into an insect.
 publicationDate: 2024-08-03
-image: ./metamorphosis.jpg
+image: "./metamorphosis.jpg"
 imageAlt: Eggs, larva, pupa, adult.
 ---
 

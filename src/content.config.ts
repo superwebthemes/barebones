@@ -1,29 +1,29 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
       description: z.string(),
-      publicationDate: z.coerce.date(),
-      image: image()
-        .refine((img) => img.width >= 1200, {
-          message: "Image should be 1200px × 630px.",
-        })
-        .optional(),
+      publicationDate: z.date(),
+      image: image().optional(),
       imageAlt: z.string().optional(),
       tags: z.array(z.string()).optional(),
     }),
 });
 
 const projects = defineCollection({
-  type: "content",
+  loader: glob({
+    pattern: "**/[^_]*.{md,mdx}",
+    base: "./src/content/projects",
+  }),
   schema: () =>
     z.object({
       title: z.string(),
       description: z.string(),
-      publicationDate: z.coerce.date().optional(),
+      publicationDate: z.date().optional(),
       url: z.string(),
     }),
 });
