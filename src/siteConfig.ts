@@ -10,7 +10,7 @@ export const SITE: SiteConfiguration = {
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
   url: "https://barebones.superwebthemes.com",
   author: "SuperWeb Themes",
-  locale: "en-US",
+  locale: "en-CA",
 };
 
 export const NAV_LINKS: NavigationLinks = {
