@@ -1,7 +1,7 @@
 export type SiteConfiguration = {
   title: string;
   description: string;
-  url: string;
+  href: string;
   author: string;
   locale: string;
 };
@@ -21,5 +21,5 @@ export type SocialLinks = {
 
 export type SocialLink = {
   label: string;
-  url: string;
+  href: string;
 };

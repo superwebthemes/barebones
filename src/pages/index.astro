@@ -1,32 +1,26 @@
 ---
-import { getCollection } from "astro:content";
-
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import Introduction from "@/components/Introduction.astro";
-import Post from "@/components/Post.astro";
-import Project from "@/components/Project.astro";
+import Posts from "@/components/Posts.astro";
+import Projects from "@/components/Projects.astro";
 import SeoPage from "@/components/SeoPage.astro";
-
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
-);
-
-const projects = await getCollection("projects");
+import SocialLinks from "@/components/SocialLinks.astro";
 ---
 
 <BaseLayout>
   <SeoPage slot="head" />
   <main>
     <Introduction />
-    <hr class="my-8 border-[0.5px] opacity-50" />
-    <h2 class="mb-3 text-lg font-bold">Blog posts</h2>
-    <ul class="grid list-none gap-2 p-0">
-      {posts.map((post) => <Post post={post} />)}
-    </ul>
-    <h2 class="mb-3 mt-8 text-lg font-bold">Projects</h2>
-    <ul class="grid list-none gap-2 p-0">
-      {projects.map((project) => <Project project={project} />)}
-    </ul>
+    <hr
+      class="border-muted-text dark:border-dark-muted-text my-12 border-[0.5px] opacity-10 dark:opacity-15"
+    />
+    <Posts />
+    <div class="mt-8">
+      <Projects />
+    </div>
+    <div class="mt-8">
+      <SocialLinks />
+    </div>
   </main>
 </BaseLayout>

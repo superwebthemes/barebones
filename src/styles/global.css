@@ -1,13 +1,55 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
+@import "./typography.css" layer(components);
+@variant dark (&:where(.dark, .dark *));
 
 :root {
   color-scheme: light dark;
+}
+.dark {
+  color-scheme: dark;
+}
+.light {
+  color-scheme: light;
+}
 
-  --light-mode-background: 240 240 240;
-  --light-mode-foreground: 0 0 0;
-  --light-mode-foreground-muted: 50 50 50;
-  --dark-mode-background: 10 10 10;
-  --dark-mode-foreground: 255 255 255;
-  --dark-mode-foreground-muted: 205 205 205;
+@variant dark {
+  &:where(.dark, .dark *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(.system, .system *) {
+      @slot;
+    }
+  }
+}
+
+@theme {
+  --color-bg: var(--color-neutral-50);
+  --color-link: oklch(46.97% 0.2734 267.56);
+  --color-muted-text: var(--color-neutral-700);
+
+  --color-dark-bg: var(--color-neutral-950);
+  --color-dark-link: oklch(73.9% 0.1387 282.47);
+  --color-dark-muted-text: var(--color-neutral-300);
+}
+
+/* ensure .link and typography.css are consistent */
+.link {
+  --prose-link-color: var(--color-link);
+  --prose-link-underline-color: var(--color-link);
+
+  color: var(--prose-link-color);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--prose-link-underline-color);
+  text-decoration-thickness: 1px;
+  & code {
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+.dark .link {
+  --prose-link-color: var(--color-dark-link);
+  --prose-link-underline-color: var(--color-dark-link);
 }

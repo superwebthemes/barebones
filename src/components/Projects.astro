@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import ExternalLink from "@/components/ExternalLink.astro";
+
+const projects = await getCollection("projects");
+---
+
+<section class="py-3">
+  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
+    Projects
+  </h2>
+  <div class="grid list-none gap-4 p-0">
+    {
+      projects.map((project) => (
+        <ExternalLink href={project.data.href}>
+          {project.data.title}
+        </ExternalLink>
+      ))
+    }
+  </div>
+</section>

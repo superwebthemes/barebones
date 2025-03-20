@@ -2,6 +2,7 @@
 import "@/styles/global.css";
 
 import BaseHead from "@/components/BaseHead.astro";
+import Footer from "@/components/Footer.astro";
 import Navigation from "@/components/Navigation.astro";
 ---
 
@@ -9,10 +10,13 @@ import Navigation from "@/components/Navigation.astro";
   <BaseHead>
     <slot name="head" />
   </BaseHead>
-  <body>
-    <main class="mx-auto min-h-screen max-w-screen-sm p-3 font-sans sm:p-6">
-      <Navigation />
-      <slot />
-    </main>
+  <body class="bg-bg dark:bg-dark-bg">
+    <Navigation />
+    <div class="mx-auto max-w-screen-sm p-3 font-sans sm:p-6">
+      <main class="min-h-screen">
+        <slot />
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>

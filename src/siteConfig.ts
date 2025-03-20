@@ -8,16 +8,12 @@ export const SITE: SiteConfiguration = {
   title: "Barebones",
   description:
     "A barebones starter theme. Built with Astro, Tailwind CSS, and Markdown.",
-  url: "https://barebones.superwebthemes.com",
-  author: "SuperWeb Themes",
+  href: "https://barebones.superwebthemes.com",
+  author: "SuperWeb Development Inc.",
   locale: "en-CA",
 };
 
 export const NAV_LINKS: NavigationLinks = {
-  about: {
-    path: "/about",
-    label: "About",
-  },
   blog: {
     path: "/blog",
     label: "Blog",
@@ -25,10 +21,6 @@ export const NAV_LINKS: NavigationLinks = {
   projects: {
     path: "/projects",
     label: "Projects",
-  },
-  contact: {
-    path: "/contact",
-    label: "Contact",
   },
   documentation: {
     path: "https://docs.superwebthemes.com",
@@ -39,18 +31,14 @@ export const NAV_LINKS: NavigationLinks = {
 export const SOCIAL_LINKS: SocialLinks = {
   email: {
     label: "Email",
-    url: "mailto:support@superwebthemes.com",
+    href: "mailto:ttl@trevortylerlee.com",
   },
   github: {
     label: "GitHub",
-    url: "https://github.com/superwebthemes",
-  },
-  discord: {
-    label: "Discord",
-    url: "https://discord.gg/V5MCBCsAjJ",
+    href: "https://github.com/trevortylerlee",
   },
   twitter: {
-    label: "Twitter",
-    url: "https://twitter.com/superwebthemes",
+    label: "X (formerly Twitter)",
+    href: "https://twitter.com/boogerbuttcheek",
   },
 };

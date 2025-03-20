@@ -1,18 +1,11 @@
 ---
-import { getCollection } from "astro:content";
-
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-import Project from "@/components/Project.astro";
+import Projects from "@/components/Projects.astro";
 import SeoPage from "@/components/SeoPage.astro";
-
-const projects = await getCollection("projects");
 ---
 
 <BaseLayout>
   <SeoPage slot="head" title="Projects" />
-  <h2 class="mb-3 text-lg font-bold">Projects</h2>
-  <ul class="grid list-none gap-2 p-0">
-    {projects.map((project) => <Project project={project} />)}
-  </ul>
+  <Projects />
 </BaseLayout>

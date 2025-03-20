@@ -1,0 +1,22 @@
+---
+import { SOCIAL_LINKS } from "@/siteConfig";
+
+import ExternalLink from "@/components/ExternalLink.astro";
+---
+
+<section class="py-3">
+  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
+    Feedback
+  </h2>
+  <div class="grid list-none gap-4 p-0">
+    {
+      Object.keys(SOCIAL_LINKS).map((socialLinkKey) => {
+        return (
+          <ExternalLink href={SOCIAL_LINKS[socialLinkKey].href}>
+            {SOCIAL_LINKS[socialLinkKey].label}
+          </ExternalLink>
+        );
+      })
+    }
+  </div>
+</section>

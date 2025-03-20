@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import Post from "@/components/Post.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
+);
+---
+
+<section class="py-3">
+  <h2 class="text-muted-text dark:text-dark-muted-text mb-3 text-lg font-bold">
+    Blog posts
+  </h2>
+  <div class="grid list-none gap-4 p-0">
+    {posts.map((post) => <Post post={post} />)}
+  </div>
+</section>
