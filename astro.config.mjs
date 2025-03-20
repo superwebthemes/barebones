@@ -4,8 +4,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://barebones.superwebthemes.com",
   integrations: [sitemap()],
+  markdown: {
+    shikiConfig: {
+      theme: "dark-plus",
+    },
+  },
+  site: "https://barebones.superwebthemes.com",
   vite: {
     plugins: [tailwindcss()],
   },

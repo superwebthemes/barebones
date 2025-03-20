@@ -1,0 +1,15 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import SeoPage from "@/components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="404: Page Not Found" />
+  <div class="mt-16 text-center">
+    <h2 class="mb-3 text-4xl font-bold text-balance">404: Page Not Found</h2>
+    <p class="text-balance">
+      Whatever you're looking for doesn't appear to be available. Sorry.
+    </p>
+  </div>
+</BaseLayout>

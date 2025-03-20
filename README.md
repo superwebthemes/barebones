@@ -10,12 +10,10 @@ Head over to the [repository](https://github.com/superwebthemes/barebones) and c
 
 ## Key features
 
-- **Batteries included:** Get started immediately with a ready-to-use setup. Start writing right away, no extensive configuration required.
 - **Fast by default:** Leverage the power of Astro, Tailwind CSS, and Markdown to create fast, lightweight web pages.
-- **Extensible and customizable:** Perfect foundation to build upon and meet your unique needs.
-- **SEO-friendly:** Sitemap, RSS feeds, and Open Graph protocol support out of the box.
-- **Best practices:** Follows industry best practices for development, ensuring high-quality, maintainable code.
-- **Accessible:** Dark and light mode support, keyboard navigation, and semantic HTML. Fully compliant with WCAG standards.
+- **Minimal and customizable:** Solid foundation to build upon and meet your unique needs. Zero frameworks installed.
+- **SEO-friendly:** Sitemap, an [RSS feed](https://barebones.superwebthemes.com/rss.xml), and Open Graph protocol support out of the box.
+- **Accessible to all:** System, dark, and light mode support. Keyboard navigation and semantic HTML. Fully compliant with WCAG standards.
 - **Free and open source:** Join the community and contribute to make this project even better!
 
 ## Core Web Vitals
@@ -43,8 +41,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## Further reading
 
-Read the [documentation for Barebones](https://docs.superwebthemes.com), join our [Discord server](https://discord.gg/V5MCBCsAjJ), or find us on X (Twitter) at [@superwebthemes](https://x.com/superwebthemes).
-
-## Styled examples
-
-If you're interested in predesigned [websites built with Barebones](https://superwebthemes.com), check out **SuperWeb Themes** — a variety of expertly designed Barebones examples by us.
+Read the [documentation for Barebones](https://docs.superwebthemes.com), join our [Discord server](https://discord.gg/V5MCBCsAjJ), or find me on X (Twitter) at [@boogerbuttcheek](https://x.com/boogerbuttcheek).
