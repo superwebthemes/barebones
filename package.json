@@ -13,9 +13,9 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.3.1",
-    "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.5",
-    "tailwindcss": "^4.1.4",
+    "@tailwindcss/vite": "^4.1.5",
+    "astro": "^5.7.10",
+    "tailwindcss": "^4.1.5",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
