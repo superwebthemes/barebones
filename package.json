@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.3.1",
+    "@astrojs/sitemap": "^3.4.0",
     "@tailwindcss/vite": "^4.1.6",
     "astro": "^5.7.13",
     "tailwindcss": "^4.1.6",
